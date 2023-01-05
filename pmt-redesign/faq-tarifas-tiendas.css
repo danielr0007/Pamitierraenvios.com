@@ -1,0 +1,922 @@
+:root {
+  --main-font-family: "Poppins", sans-serif;
+  --primary-text-color: #646464;
+  --light-title-text-color: rgb(37, 37, 37);
+  --primary-color: #43b7ff;
+  --secondary-color: white;
+  --highlight-color: rgb(251, 200, 104);
+}
+
+/* ==================================================
+                            DEFAULT STYLES                   
+        =====================================================*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* IPAD SCREENS=============================================== */
+@media screen and (max-width: 1024px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--main-font-family);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-title-text-color);
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:link {
+  color: inherit;
+}
+
+/* <!-- ============================================ -->
+        <!--                   UTILITIES                    -->
+        <!-- ============================================ --> */
+
+.hide {
+  display: none !important;
+}
+
+.blue-letters {
+  color: var(--primary-color);
+}
+
+/*============================================ -->
+  <!--              HEADER                     -->
+  ================================================*/
+
+.header-faq {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 254, 0.926) 20%,
+      #43b7ffb5
+    ),
+    url(/images/faq-banner.jpg) no-repeat;
+  background-position: center 18%;
+  background-size: cover;
+}
+
+/* NAVIGATION////////////////////////////////////////////
+        ///////////////////////////////////////////////////////// */
+
+nav {
+  border-bottom: solid rgb(223, 223, 223) 1px;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 80px;
+}
+
+.nav-links-container ul {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links-container ul li a {
+  font-family: var(--main-font-family);
+}
+
+.mobile-menu-hamburger {
+  font-size: 28px;
+  display: none;
+}
+
+/* IPAD SCREENS=============================================== */
+@media screen and (max-width: 1024px) {
+  nav {
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .nav-links-container {
+    display: none;
+  }
+  .mobile-menu-hamburger {
+    display: block;
+  }
+}
+
+/* BIG PHONES============================================ */
+@media screen and (max-width: 424px) {
+  nav {
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+  }
+}
+
+/* SMALL PHONES============================================ */
+@media screen and (max-width: 375px) {
+  nav {
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: space-between;
+  }
+}
+
+/* BANNER/////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////// */
+
+.banner-outermost-container {
+  width: 100%;
+  height: 76%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-content-container h1 {
+  font-size: clamp(0.9rem, 1.2rem + 1.9vw, 5.5rem);
+  font-weight: 900;
+  line-height: 1.4;
+  color: rgb(37, 37, 37);
+}
+
+/* IPAD SCREENS=============================================== */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 40vh;
+  }
+}
+
+/* BIG PHONE SCREENS=============================================== */
+@media screen and (max-width: 414px) {
+  header {
+    height: 55vh;
+  }
+}
+
+/*============================================ -->
+  <!--             FAQ SECTION                     -->
+  ================================================*/
+
+.faq-section {
+  margin-top: 120px;
+  margin-bottom: 220px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 0.5rem + 1.3vw, 3rem);
+  margin-bottom: 20px;
+}
+
+.faq-container {
+  /* border: solid red; */
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+.indi-faq {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.indi-faq-title-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.indi-faq-plus-container {
+  padding: 8px 22px;
+  background-color: #43b7ff;
+  flex: 0 0 4%;
+  border-radius: 18px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indi-faq-title-container {
+  padding: 8px 22px;
+  background-color: #43b7ff;
+  flex: 0 0 93%;
+  border-radius: 18px;
+  font-size: 18px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.faq-answer-box {
+  margin-top: 25px;
+  margin-left: 10px;
+  padding: 8px;
+
+  /* border: solid red; */
+}
+.faq-answer-box p {
+  color: var(--primary-text-color);
+  line-height: 1.8;
+}
+
+/* IPAD SCREENS=============================================== */
+@media screen and (max-width: 1024px) {
+  .faq-container {
+    width: 88%;
+    /* border: solid green; */
+  }
+  .indi-faq {
+    margin-top: 22px;
+    margin-bottom: 10px;
+  }
+
+  .indi-faq-title-box {
+    gap: 20px;
+  }
+
+  .indi-faq-title-container {
+    flex: 0 0 87%;
+  }
+
+  .faq-answer-box p {
+    font-size: 17px;
+  }
+}
+
+/* BIG PHONE SCREENS=============================================== */
+@media screen and (max-width: 540px) {
+  .faq-section {
+    margin-top: 130px;
+  }
+
+  .faq-section h2 {
+    margin-bottom: 20px;
+  }
+
+  .faq-container {
+    /* border: solid red; */
+    width: 98%;
+  }
+  .indi-faq {
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+
+  .indi-faq-title-box {
+    /* display: flex;
+      justify-content: space-between; */
+    gap: 1px;
+    height: 120px;
+  }
+
+  .indi-faq-plus-container {
+    padding: 1px 19px;
+    border-radius: 0;
+    font-size: 19px;
+  }
+
+  .indi-faq-title-container {
+    padding: 1px 10px;
+    flex: 0 0 85%;
+    border-radius: 0;
+    font-size: 16px;
+  }
+
+  .faq-answer-box {
+    margin-top: 29px;
+    margin-left: 5px;
+    padding: 4px;
+
+    /* border: solid red; */
+  }
+  .faq-answer-box p {
+    font-size: 15px;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////
+/////////        CALCULATOR SECTION FOR TARIFAS PAGE      ///////////
+///////////////////////////////////////////////////////////////////// */
+
+.header-tarifas {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 254, 0.926) 20%,
+      #43b7ffb5
+    ),
+    url(/images/closing-box.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.calculatuenvio {
+  margin-top: 60px;
+  margin-bottom: 150px;
+  height: 555px;
+  /* border: solid green; */
+}
+
+.calculator-textbox {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  width: 70%;
+  margin-bottom: 100px;
+  /* border: solid red; */
+}
+
+.calculator-textbox h2 {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.calculator-textbox h4 {
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator input {
+  border: none;
+  border-bottom: solid rgb(179, 222, 245) 1.5px;
+  width: 600px;
+  font-size: 20px;
+}
+
+.calculator input:focus {
+  outline: none;
+}
+
+#valor {
+  margin-bottom: 18px;
+}
+
+#peso {
+  margin-bottom: 18px;
+}
+
+#calcular {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(179, 222, 245);
+  color: rgb(120, 120, 120);
+  cursor: pointer;
+}
+
+#resetear {
+  border: none;
+  margin-top: 5px;
+  text-decoration: underline;
+  background-color: white;
+  cursor: pointer;
+}
+
+.calculator h6 {
+  line-height: 1.6;
+  margin-top: 13px;
+  font-size: 17px;
+  padding: 5px;
+}
+
+.results {
+  font-weight: 400;
+}
+
+/* BIG PHONE SCREENS=============================================== */
+@media screen and (max-width: 635px) {
+  .calculatuenvio {
+    margin-top: 60px;
+    display: block;
+    height: auto;
+  }
+
+  .calculator-textbox {
+    display: block;
+    padding: 30px 15px 45px;
+    width: 100%;
+  }
+
+  .calculator-textbox h2 {
+    margin: 15px 0 25px;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .calculator-textbox h4 {
+    line-height: 1.7;
+    font-size: 16px;
+    padding: 3px 0 0px;
+    hyphens: auto;
+  }
+
+  .calculator {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .calculator input {
+    width: 90%;
+  }
+
+  #valor {
+    margin-bottom: 35px;
+  }
+
+  #peso {
+    margin-bottom: 25px;
+  }
+
+  #calcular {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 90%;
+    padding: 12px 0;
+  }
+
+  #resetear {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .calculator h6 {
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 35px;
+    padding: 5px 15px;
+  }
+
+  .results {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+/* <!-- ============================================ -->
+  <!--               HIDDEN MOBILE MENU               -->
+  <!-- ============================================ --> */
+.hidden-menu-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 35%;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 80px;
+  padding: 30px;
+  display: none;
+}
+
+.close-menu-button {
+}
+.close-menu-button i {
+  color: var(--light-title-text-color);
+  font-size: 35px;
+}
+
+.links-container ul li {
+  text-align: right;
+  padding: 15px 20px 15px 0;
+}
+.links-container ul li a {
+  color: var(--light-title-text-color);
+  font-size: 19px;
+}
+
+/* IPAD SCREENS=============================================== */
+@media screen and (max-width: 1024px) {
+  .hidden-menu-container {
+    gap: 90px;
+    padding: 50px;
+    display: flex;
+  }
+
+  .close-menu-button i {
+    font-size: 55px;
+  }
+
+  .links-container ul li {
+    text-align: right;
+    padding: 35px 45px 35px 0;
+  }
+  .links-container ul li a {
+    font-size: 29px;
+  }
+}
+
+/* BIG PHONE SCREENS=============================================== */
+@media screen and (max-width: 414px) {
+  .hidden-menu-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 35%;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 80px;
+    padding: 30px;
+    display: flex;
+  }
+
+  .close-menu-button {
+  }
+  .close-menu-button i {
+    color: var(--light-title-text-color);
+    font-size: 35px;
+  }
+
+  .links-container ul li {
+    text-align: right;
+    padding: 15px 20px 15px 0;
+  }
+  .links-container ul li a {
+    color: var(--light-title-text-color);
+    font-size: 19px;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////
+/////////              SECTION FOR TIENDAS PAGE             ///////////
+///////////////////////////////////////////////////////////////////// */
+
+.header-tiendas {
+  width: 100%;
+  height: 55vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 254, 0.926) 20%,
+      #43b7ffb5
+    ),
+    url(/images/mall-picc.jpg) no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+
+.tiendas-categorias-section {
+  margin-top: 110px;
+  /* border: solid red; */
+  margin-bottom: 300px;
+}
+
+.tiendas-categorias-outermost-container {
+  margin: auto;
+  width: 75%;
+  /* border: solid green; */
+  text-align: center;
+  padding: 15px;
+}
+.tiendas-categorias-outermost-container h2 {
+  font-size: clamp(1.5rem, 0.5rem + 1.5vw, 3rem);
+  margin-bottom: 25px;
+  padding: 10px;
+}
+.tiendas-categorias-outermost-container h4 {
+  font-size: clamp(1.2rem, 0.5rem + 1vw, 3rem);
+  font-weight: 500;
+  margin-top: 35px;
+}
+.categorias-box {
+  /* border: solid blue; */
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 415px);
+}
+.indi-categoria {
+  margin: auto;
+  /* border: solid pink; */
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.indi-categoria h3 {
+  font-size: clamp(1.8rem, 0.5rem + 3vw, 4rem);
+  color: white;
+}
+.indi-categoria a {
+  display: block;
+  margin-top: 100px;
+  font-size: 20px;
+  color: white;
+}
+
+.indi-categoria:nth-child(1) {
+  background: linear-gradient(to bottom, rgba(66, 66, 66, 0.549) 20%, #242424c5),
+    url(/images/moda.jpg) no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+.indi-categoria:nth-child(2) {
+  background: linear-gradient(to bottom, rgba(66, 66, 66, 0.549) 20%, #242424c5),
+    url(/images/electronica.jpg) no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+.indi-categoria:nth-child(3) {
+  background: linear-gradient(to bottom, rgba(66, 66, 66, 0.549) 20%, #242424c5),
+    url(/images/celulares.jpg) no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+.indi-categoria:nth-child(4) {
+  background: linear-gradient(to bottom, rgba(66, 66, 66, 0.549) 20%, #242424c5),
+    url(/images/juguetes.jpg) no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+.indi-categoria:nth-child(5) {
+  background: linear-gradient(to bottom, rgba(66, 66, 66, 0.549) 20%, #242424c5),
+    url(/images/relojes.jpg) no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+.indi-categoria:nth-child(6) {
+  background: linear-gradient(to bottom, rgba(66, 66, 66, 0.549) 20%, #242424c5),
+    url(/images/hogar.jpg) no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+.indi-categoria:nth-child(7) {
+  background: linear-gradient(to bottom, rgba(66, 66, 66, 0.549) 20%, #242424c5),
+    url(/images/zapatos.jpg) no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+.indi-categoria:nth-child(8) {
+  background: linear-gradient(to bottom, rgba(66, 66, 66, 0.549) 20%, #242424c5),
+    url(/images/belleza.jpg) no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+.indi-categoria:nth-child(9) {
+  background: linear-gradient(to bottom, rgba(66, 66, 66, 0.549) 20%, #242424c5),
+    url(/images/suplementos.jpg) no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+.indi-categoria:nth-child(10) {
+  background: linear-gradient(to bottom, rgba(66, 66, 66, 0.549) 20%, #242424c5),
+    url(/images/ninos.jpg) no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+
+/* IPAD SCREENS=============================================== */
+@media screen and (max-width: 1024px) {
+  .header-tiendas {
+    height: 45vh;
+  }
+
+  .tiendas-categorias-outermost-container {
+    width: 89%;
+    padding: 5px;
+  }
+
+  .tiendas-categorias-outermost-container h2 {
+    margin-bottom: 35px;
+    padding: 12px;
+  }
+  .tiendas-categorias-outermost-container h4 {
+    margin-top: 39px;
+  }
+  .categorias-box {
+    margin-top: 95px;
+
+    grid-template-columns: repeat(auto-fit, 330px);
+    justify-content: center;
+  }
+  .indi-categoria {
+    height: 350px;
+  }
+
+  .indi-categoria a {
+    font-size: 22px;
+  }
+}
+
+/* BIG PHONE SCREENS=============================================== */
+@media screen and (max-width: 414px) {
+  .header-tiendas {
+    height: 50vh;
+  }
+
+  .tiendas-categorias-outermost-container {
+    width: 95%;
+    padding: 2px;
+  }
+
+  .tiendas-categorias-outermost-container h2 {
+    margin-bottom: 35px;
+    padding: 12px;
+  }
+  .tiendas-categorias-outermost-container h4 {
+    margin-top: 55px;
+  }
+  .categorias-box {
+    margin-top: 98px;
+
+    grid-template-columns: repeat(auto-fit, 100%);
+  }
+}
+
+/* <!-- ============================================ -->
+<!--                     FOOTER                       -->
+<!-- ============================================ --> */
+
+footer {
+  width: 100%;
+
+  background-color: #484848;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.redes-container {
+  background-color: #313131;
+  padding: 15px 0;
+  /* border: solid red; */
+}
+
+.redes-container h3 {
+  text-align: center;
+
+  padding-top: 55px;
+  padding-bottom: 10px;
+}
+
+.social-icons-container {
+  width: 30%;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 55px;
+  padding: 10px;
+  /* border: solid red; */
+}
+.social-icons-container a {
+  font-size: 33px;
+  margin: 0 10px 0 10px;
+}
+
+.other-links-container {
+  margin: auto;
+
+  padding: 80px;
+
+  display: flex;
+  justify-content: center;
+  /* border: solid red; */
+}
+.other-links-container a {
+  font-size: 20px;
+  padding: 20px 25px 20px 25px;
+}
+
+.copyright {
+  text-align: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px;
+}
+
+/* DESKTOP SCREENS=============================================== */
+@media screen and (max-width: 1600px) and (min-width: 1200px) {
+  .redes-container h3 {
+    padding-top: 90px;
+  }
+  .social-icons-container {
+    margin-top: 40px;
+  }
+  .social-icons-container a {
+    color: white;
+  }
+  .other-links-container {
+    margin-top: 50px;
+  }
+}
+
+/* IPAD SCREENS=============================================== */
+@media screen and (max-width: 1024px) {
+  .redes-container h3 {
+    width: 90%;
+
+    margin: auto;
+  }
+
+  .social-icons-container {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .social-icons-container a {
+    margin: 0 15px 0 15px;
+  }
+
+  .other-links-container {
+    margin-top: 5px;
+    display: block;
+    padding: 80px;
+  }
+  .other-links-container a {
+    display: block;
+    font-size: 20px;
+    padding: 20px 25px 20px 25px;
+  }
+}
+
+/* BIG PHONE SCREENS=============================================== */
+@media screen and (max-width: 414px) {
+  .redes-container h3 {
+    width: 85%;
+    line-height: 1.8;
+    font-size: 18px;
+  }
+  .social-icons-container {
+    width: 60%;
+  }
+  .social-icons-container a {
+    font-size: 30px;
+  }
+
+  .other-links-container {
+    padding: 25px;
+
+    display: block;
+    padding-bottom: 100px;
+    /* border: solid red; */
+  }
+  .other-links-container a {
+    font-size: 18px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}

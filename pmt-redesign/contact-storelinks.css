@@ -1,0 +1,449 @@
+:root {
+  --main-font-family: "Poppins", sans-serif;
+  --primary-text-color: #646464;
+  --light-title-text-color: rgb(37, 37, 37);
+  --primary-color: #43b7ff;
+  --secondary-color: white;
+  --highlight-color: rgb(251, 200, 104);
+}
+
+/* ==================================================
+                      DEFAULT STYLES                   
+  =====================================================*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--main-font-family);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-title-text-color);
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:link {
+  color: inherit;
+}
+
+/* <!-- ============================================ -->
+  <!--                   UTILITIES                    -->
+  <!-- ============================================ --> */
+
+.hide {
+  display: none !important;
+}
+
+.page-width {
+  width: 70%;
+  margin: auto;
+}
+
+/* IPAD SCREENS=============================================== */
+@media screen and (max-width: 1024px) {
+  .page-width {
+    width: 84%;
+    margin: auto;
+  }
+}
+
+/* BIG PHONES */
+@media screen and (max-width: 424px) {
+  .page-width {
+    width: 92%;
+    margin: auto;
+  }
+}
+
+/* <!-- ============================================ -->
+  <!--                   HEADER                      -->
+  <!-- ============================================ --> */
+
+/* NAVIGATION////////////////////////////////////////////
+  ///////////////////////////////////////////////////////// */
+
+nav {
+  border-bottom: solid rgb(223, 223, 223) 1px;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 80px;
+}
+
+.nav-links-container ul {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links-container ul li a {
+  font-family: var(--main-font-family);
+}
+
+.mobile-menu-hamburger {
+  font-size: 28px;
+  display: none;
+}
+
+/* IPAD SCREENS=============================================== */
+@media screen and (max-width: 1024px) {
+  .nav-links-container {
+    display: none;
+  }
+  .mobile-menu-hamburger {
+    font-size: 28px;
+    display: block;
+  }
+}
+
+/* BIG PHONES============================================ */
+@media screen and (max-width: 424px) {
+  nav {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* SMALL PHONES============================================ */
+@media screen and (max-width: 375px) {
+  nav {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+/* <!-- ============================================ -->
+  <!--                MAIN INFO                     -->
+  <!-- ============================================ --> */
+
+.contact-info-section {
+  margin-top: 6rem;
+  margin-bottom: 9rem;
+}
+
+.contact-info-outermost-container {
+  padding-bottom: 18px;
+  border-bottom: solid var(--primary-text-color) 1px;
+}
+
+.contact-info-outermost-container h1 {
+  text-align: center;
+  font-size: clamp(2.8rem, 1rem + 3vw, 4rem);
+}
+
+.contact-info-outermost-container h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 0.5rem + 1.4vw, 3rem);
+  font-weight: 500;
+  padding: 16px;
+  color: var(--light-title-text-color);
+}
+
+.indi-contact-info-containers {
+  margin: 60px 0 50px 0;
+}
+
+.indi-contact-info-containers h4 {
+  font-size: clamp(1.6rem, 0.5rem + 1.5vw, 3rem);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.indi-contact-info-containers p {
+  margin: 20px 0 15px 0;
+  font-size: clamp(1rem, 0.2rem + 1vw, 2rem);
+  color: var(--primary-text-color);
+}
+
+/* <!-- ============================================ -->
+  <!--                      MAP                     -->
+  <!-- ============================================ --> */
+
+/* SMALL PHONES============================================ */
+@media screen and (max-width: 375px) {
+  .contact-info-outermost-container h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .contact-info-outermost-container h2 {
+    font-size: 20px;
+  }
+
+  .indi-contact-info-containers h4 {
+    font-size: 22px;
+  }
+}
+
+/* <!-- ============================================ -->
+<!--               STORE LINKS SECTION               -->
+<!-- ============================================ --> */
+
+.links-section {
+  margin-bottom: 200px;
+}
+
+.links-outermost-container {
+  /* border: solid green; */
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+.links-outermost-container ul {
+}
+.links-outermost-container ul li {
+  padding: 8px;
+  list-style: circle;
+}
+.links-outermost-container ul li a {
+  font-size: 18px;
+}
+/* <!-- ============================================ -->
+<!--               HIDDEN MOBILE MENU               -->
+<!-- ============================================ --> */
+.hidden-menu-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 35%;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 80px;
+  padding: 30px;
+  display: none;
+  z-index: 1;
+}
+
+.close-menu-button i {
+  color: var(--light-title-text-color);
+  font-size: 35px;
+}
+
+.links-container ul li {
+  text-align: right;
+  padding: 15px 20px 15px 0;
+}
+.links-container ul li a {
+  color: var(--light-title-text-color);
+  font-size: 19px;
+}
+
+/* IPAD SCREENS=============================================== */
+@media screen and (max-width: 1024px) {
+  .hidden-menu-container {
+    gap: 90px;
+    padding: 50px;
+    display: flex;
+  }
+
+  .close-menu-button i {
+    font-size: 55px;
+  }
+
+  .links-container ul li {
+    text-align: right;
+    padding: 35px 45px 35px 0;
+  }
+  .links-container ul li a {
+    font-size: 29px;
+  }
+}
+
+/* BIG PHONE SCREENS=============================================== */
+@media screen and (max-width: 414px) {
+  .hidden-menu-container {
+    left: 33%;
+  }
+  .close-menu-button i {
+    color: var(--light-title-text-color);
+    font-size: 35px;
+  }
+
+  .links-container ul li {
+    text-align: right;
+    padding: 15px 20px 15px 0;
+  }
+  .links-container ul li a {
+    color: var(--light-title-text-color);
+    font-size: 19px;
+  }
+}
+
+/* SMALL PHONES============================================ */
+@media screen and (max-width: 375px) {
+  .hidden-menu-container {
+    left: 31%;
+  }
+}
+
+/* <!-- ============================================ -->
+<!--                     FOOTER                       -->
+<!-- ============================================ --> */
+
+footer {
+  width: 100%;
+
+  background-color: #484848;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.redes-container {
+  background-color: #313131;
+  padding: 15px 0;
+  /* border: solid red; */
+}
+
+.redes-container h3 {
+  text-align: center;
+
+  padding-top: 55px;
+  padding-bottom: 10px;
+}
+
+.social-icons-container {
+  width: 30%;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 55px;
+  padding: 10px;
+  /* border: solid red; */
+}
+.social-icons-container a {
+  font-size: 33px;
+  margin: 0 10px 0 10px;
+}
+
+.other-links-container {
+  margin: auto;
+
+  padding: 80px;
+
+  display: flex;
+  justify-content: center;
+  /* border: solid red; */
+}
+.other-links-container a {
+  font-size: 20px;
+  padding: 20px 25px 20px 25px;
+}
+
+.copyright {
+  text-align: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px;
+}
+
+/* DESKTOP SCREENS=============================================== */
+@media screen and (max-width: 1600px) and (min-width: 1200px) {
+  .redes-container h3 {
+    padding-top: 90px;
+  }
+  .social-icons-container {
+    margin-top: 40px;
+  }
+  .social-icons-container a {
+    color: white;
+  }
+  .other-links-container {
+    margin-top: 50px;
+  }
+}
+
+/* IPAD SCREENS=============================================== */
+@media screen and (max-width: 1024px) {
+  .redes-container h3 {
+    width: 90%;
+
+    margin: auto;
+  }
+
+  .social-icons-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .social-icons-container a {
+    margin: 0 15px 0 15px;
+  }
+
+  .other-links-container {
+    margin-top: 5px;
+    display: block;
+    padding: 80px;
+  }
+  .other-links-container a {
+    display: block;
+    font-size: 20px;
+    padding: 20px 25px 20px 25px;
+  }
+}
+
+/* BIG PHONE SCREENS=============================================== */
+@media screen and (max-width: 414px) {
+  .redes-container h3 {
+    width: 85%;
+    line-height: 1.8;
+    font-size: 18px;
+  }
+  .social-icons-container {
+    width: 100%;
+  }
+  .social-icons-container a {
+    font-size: 30px;
+  }
+
+  .other-links-container {
+    padding: 25px;
+
+    display: block;
+    padding-bottom: 100px;
+    /* border: solid red; */
+  }
+  .other-links-container a {
+    font-size: 18px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="faq-tarifas-tiendas.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cd8254595d.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-117915592-5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-117915592-5");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KQGGBW2");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarifas</title>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KQGGBW2"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- ============================================ -->
+    <!--                   NAVIGATION                 -->
+    <!-- ============================================ -->
+
+    <header class="header-tarifas">
+      <nav>
+        <div class="logo-container">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="nav-links-container">
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCt5i0rI5ihDyl4GWCjggSjA/videos"
+                >Videos Instructivos</a
+              >
+            </li>
+            <li><a href="/tarifas.html">Tarifas</a></li>
+            <li>
+              <a href="/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+            </li>
+
+            <li>
+              <a href="usa-a-colombia.html">Clientes Locales</a>
+            </li>
+
+            <li><a href="/contact.html">Contáctenos</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu-hamburger">
+          <i class="fa-solid fa-bars hamburger"></i>
+        </div>
+      </nav>
+      <div class="banner-outermost-container">
+        <div class="banner-content-container">
+          <h1>Tarifas</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!--             CALCULATOR SECTION               -->
+    <!-- ============================================ -->
+    <section class="calculatuenvio">
+      <div class="calculator-textbox">
+        <h2><span class="blue-letters">Calcula</span> tu envío</h2>
+
+        <h4>
+          Utiliza la calculadora para obtener un estimado del costo de tu envío.
+          Para envíos cuyo valor supera los 200 dólares contáctanos para
+          cotizar. Igual con celulares y computadoras. <br /><br />
+          A todos los envíos se le añade un seguro de 10 dólares que cubre hasta
+          $200 por perdida total. Si necesitas más cobertura, cada $100
+          adicionales le costará 5 dólares
+        </h4>
+      </div>
+
+      <div class="calculator">
+        <input id="valor" type="number" placeholder="Valor Declarado USD" />
+
+        <input id="peso" type="number" placeholder="Peso LBS" />
+
+        <button id="calcular">Calcular</button>
+
+        <button id="resetear" class="hide">Cotizar otro</button>
+
+        <h6 id="calcresults" class="hide">
+          Flete Aéreo: <span class="results" id="flete">0</span> <br />
+          Impuestos: <span class="results" id="impuestoss">0</span> <br />
+          Seguro: <span class="results" id="seguroo">7</span> <br />
+          TOTAL: <span class="results" id="total">0</span>
+        </h6>
+
+        <h6 id="over200contact" class="hide">
+          Contáctanos para paquetes valorizados por más de $200 para cotizarte
+        </h6>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   FOOTER                      -->
+    <!-- ============================================ -->
+
+    <footer>
+      <div class="redes-container">
+        <h3>
+          ¡Siguenos en las redes sociales para lo último en noticias y
+          promociones!
+        </h3>
+        <div class="social-icons-container">
+          <a href="https://es-la.facebook.com/PaMiTierraEnvios/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/pamitierraenvios/?hl=en"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCt5i0rI5ihDyl4GWCjggSjA/videos"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+      <div class="other-links-container">
+        <a href="">Sobre Nosotros</a>
+        <a href="/tiendas.html">Tiendas de Estados Unidos</a>
+        <a href="">Requisitos y condiciones</a>
+        <a href="">Blog</a>
+      </div>
+      <p class="copyright">Copyright © PaMiTierraEnvios</p>
+    </footer>
+
+    <!-- ==================================================================
+  <----------              HIDDEN MOBILE MENU                     /////
+  ======================================================================= -->
+
+    <div class="hidden-menu-container hide">
+      <div class="close-menu-button">
+        <i class="fa-solid fa-xmark close-menu"></i>
+      </div>
+      <div class="links-container">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCt5i0rI5ihDyl4GWCjggSjA/videos"
+              >Videos Instructivos</a
+            >
+          </li>
+          <li><a href="/tarifas.html">Tarifas</a></li>
+          <li><a href="/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+          <li>
+            <a href="usa-a-colombia.html">Clientes Locales</a>
+          </li>
+          <li><a href="/contact.html">Contáctenos</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const calcular = document.getElementById("calcular");
+      const resetear = document.getElementById("resetear");
+      const flete = document.getElementById("flete");
+      const impuestos = document.getElementById("impuestoss");
+      const seguro = document.getElementById("seguroo");
+      const total = document.getElementById("total");
+
+      calcular.addEventListener("click", function () {
+        console.log("working");
+        const valor = document.getElementById("valor").value;
+        const peso = document.getElementById("peso").value;
+
+        let pesoPay;
+        let totalToPost;
+
+        if (valor > 200) {
+          document.getElementById("over200contact").classList.remove("hide");
+          resetear.classList.remove("hide");
+          document.getElementById("calcresults").classList.add("hide");
+        } else if (valor <= 200 && peso > 10) {
+          document.getElementById("calcresults").classList.remove("hide");
+          document.getElementById("over200contact").classList.add("hide");
+          resetear.classList.remove("hide");
+
+          pesoPay = Math.floor(peso * 1.95);
+
+          flete.textContent = pesoPay;
+
+          totalToPost = pesoPay + 10;
+
+          total.textContent = totalToPost;
+        } else if (valor <= 200 && peso <= 10) {
+          document.getElementById("calcresults").classList.remove("hide");
+          document.getElementById("over200contact").classList.add("hide");
+          resetear.classList.remove("hide");
+
+          totalToPost = 24;
+          total.textContent = totalToPost;
+        }
+      });
+
+      resetear.addEventListener("click", function () {
+        document.getElementById("over200contact").classList.add("hide");
+        document.getElementById("calcresults").classList.add("hide");
+        resetear.classList.add("hide");
+
+        document.querySelector("#valor").value = "";
+        document.querySelector("#peso").value = "";
+      });
+
+      // ============================================================
+      // --->          LOGIC TO OPEN MOBILE MENU             <-------
+      // ============================================================
+      const hamburgerIcon = document.querySelector(".hamburger");
+      const hiddenMenuContainer = document.querySelector(
+        ".hidden-menu-container"
+      );
+      const closeMenuIcon = document.querySelector(".close-menu");
+      hamburgerIcon.addEventListener("click", function () {
+        hiddenMenuContainer.classList.toggle("hide");
+
+        // WHEN MOBILE MENU IS OPEN USER CANNOT SCROLL
+        document.querySelector("body").style.position = "fixed";
+      });
+
+      // CLOSE MENU LOGIC
+      closeMenuIcon.addEventListener("click", function () {
+        hiddenMenuContainer.classList.add("hide");
+
+        document.querySelector("body").style.position = "relative";
+      });
+    </script>
+  </body>
+</html>

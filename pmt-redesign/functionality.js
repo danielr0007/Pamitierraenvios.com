@@ -23,7 +23,7 @@ const paraQuienContentContainer = document.querySelector(
 );
 
 // ================================================================
-///         LOGIC TO MAKE ELEMENTS APPEAR AS USER SCROLLS     /////
+///         !LOGIC TO MAKE ELEMENTS APPEAR AS USER SCROLLS     /////
 //=================================================================
 function makeAppearFunction(element1, element2, outerMostElement) {
   const firstElement = element1;
@@ -92,7 +92,7 @@ document.querySelectorAll(".fade-in-bottom").forEach((section) => {
 });
 
 // ================================================================
-///       LOGIC TO MAKE TESTIMONIALS SLIDE WHEN USER CLICKS    /////
+///       !LOGIC TO MAKE TESTIMONIALS SLIDE WHEN USER CLICKS    /////
 //=================================================================
 const allTestis = document.querySelectorAll(".indi-testimonial-container");
 const testi1 = document.querySelector("#testi1");
@@ -156,7 +156,7 @@ leftArrow.addEventListener("click", function () {
 });
 
 // ================================================================
-///         LOGIC TO MAKE ELEMENTS MOVE AS USER SCROLLS           /////
+///         !LOGIC TO MAKE ELEMENTS MOVE AS USER SCROLLS           /////
 //=================================================================
 
 const movingTitle = document.querySelector("#moving-title");
@@ -191,7 +191,7 @@ window.addEventListener("scroll", () => {
 });
 
 // ================================================================
-///              LOGIC TO LAZY LOAD YOUTUBE VIDEO               /////
+///              !LOGIC TO LAZY LOAD YOUTUBE VIDEO               /////
 //=================================================================
 const comoFuncionaSection = document.querySelector(".como-funciona-section");
 const vidIframe = `<iframe
@@ -221,7 +221,7 @@ const observer2 = new IntersectionObserver(function (entries, observer) {
 observer2.observe(comoFuncionaSection);
 
 // ================================================================
-///                LOGIC TO SHOW STICKY MENU                /////
+///                !LOGIC TO SHOW STICKY MENU                /////
 //=================================================================
 if (screen.width > 1023) {
   const bannerOuterMostContainer = document.querySelector(
@@ -247,7 +247,7 @@ if (screen.width > 1023) {
 }
 
 // ================================================================
-///                  LOGIC TO OPEN MOBILE MENU                     /////
+///                  !LOGIC TO OPEN MOBILE MENU                     /////
 //=================================================================
 
 const hamburgerIcon = document.querySelector(".hamburger");

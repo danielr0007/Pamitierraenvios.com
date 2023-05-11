@@ -1097,7 +1097,6 @@ nav {
   }
 
   .second-cta-button-container {
-    /* border: solid purple; */
   }
 
   .proximal-button-container {
@@ -1235,7 +1234,6 @@ nav {
   }
 
   .centro-atencion-content-container {
-    /* border: solid pink; */
     width: 90%;
   }
 
@@ -1303,13 +1301,12 @@ nav {
 
 .partners-logos-containers img {
   width: 130px;
-  /* margin: 0 15px 0 15px; */
+  display: block;
 }
 
 /* IPAD SCREENS=============================================== */
 @media screen and (max-width: 1024px) {
   .partners-logos-containers {
-    /* border: solid pink; */
     margin-top: 33px;
     width: 75%;
   }
@@ -1323,14 +1320,12 @@ nav {
 /* BIG PHONE SCREENS=============================================== */
 @media screen and (max-width: 635px) {
   .partners-section {
-    /* border: solid pink; */
   }
 
   .partners-title-container {
   }
 
   .partners-logos-containers {
-    /* border: solid pink; */
     margin-top: 35px;
     margin-bottom: 80px;
     width: 90%;

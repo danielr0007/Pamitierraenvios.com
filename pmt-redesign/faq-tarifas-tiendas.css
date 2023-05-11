@@ -349,7 +349,7 @@ nav {
 .calculatuenvio {
   margin-top: 60px;
   margin-bottom: 150px;
-  height: 555px;
+  /* height: 555px; */
   /* border: solid green; */
 }
 
@@ -361,7 +361,8 @@ nav {
   align-items: center;
   text-align: center;
   padding: 30px;
-  width: 70%;
+  width: 60%;
+  min-width: 600px;
   margin-bottom: 100px;
   /* border: solid red; */
 }
@@ -447,6 +448,7 @@ nav {
     display: block;
     padding: 30px 15px 45px;
     width: 100%;
+    min-width: 0;
   }
 
   .calculator-textbox h2 {
@@ -778,6 +780,162 @@ nav {
     margin-top: 98px;
 
     grid-template-columns: repeat(auto-fit, 100%);
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////
+/////////        SECTION FOR SOBRE NOSOTROS PAGE      ///////////
+///////////////////////////////////////////////////////////////////// */
+
+#mission-vision-section {
+  margin-top: -5rem;
+  padding-bottom: 4rem;
+}
+
+.mission-vision-container {
+  border-top: solid grey 1px;
+  padding-top: 3rem;
+  margin: auto;
+  max-width: 1400px;
+  /* border: solid blue; */
+  display: flex;
+}
+
+.mission-vision-indi {
+  /* border: solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.mission-vision-indi picture {
+  height: 400px;
+  /* width: 600px; */
+}
+
+.mission-vision-indi picture img {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.mission-vision-indi h4 {
+  font-size: 1.5rem;
+}
+.mission-vision-indi p {
+  text-align: center;
+  line-height: 1.8;
+  padding: 1rem;
+}
+
+#quote-section {
+  /* border: solid red; */
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+.quote-section-container {
+  /* border: solid blue; */
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-icon-container i {
+  font-size: 4rem;
+}
+
+.quote-text-container {
+  padding: 5px 0;
+  /* border: solid pink; */
+  text-align: center;
+}
+.quote-text-container h5 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+.quote-text-container p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* !IPAD MEDIA QUERY//////////////////////////////////////// */
+
+@media (max-width: 820px) {
+  .mission-vision-container {
+    max-width: 700px;
+  }
+
+  .mission-vision-indi picture {
+    height: 300px;
+  }
+
+  .mission-vision-indi h4 {
+    padding-top: 1rem;
+  }
+  .mission-vision-indi p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  #quote-section {
+    /* border: solid red; */
+    padding-top: 4rem;
+  }
+
+  .quote-icon-container i {
+    font-size: 3rem;
+  }
+
+  .quote-text-container h5 {
+    font-size: 2rem;
+  }
+}
+
+/* !IPHONE MEDIA QUERY//////////////////////////////////////// */
+
+@media (max-width: 640px) {
+  #mission-vision-section {
+    margin-top: -3rem;
+    padding-bottom: 5rem;
+  }
+
+  .mission-vision-container {
+    display: block;
+    width: 95%;
+  }
+
+  .mission-vision-indi:first-child {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .mission-vision-indi picture {
+    height: 300px;
+  }
+
+  .mission-vision-indi p {
+    padding: 3px;
+    text-align: center;
+  }
+
+  #quote-section {
+    /* border: solid red; */
+    padding-top: 2rem;
+  }
+
+  .quote-text-container {
+    padding: 8px 5px;
+  }
+  .quote-text-container h5 {
+    font-size: 1.5rem;
   }
 }
 

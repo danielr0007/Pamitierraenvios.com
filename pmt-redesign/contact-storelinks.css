@@ -147,7 +147,7 @@ nav {
 
 .contact-info-section {
   margin-top: 6rem;
-  margin-bottom: 9rem;
+  margin-bottom: 6rem;
 }
 
 .contact-info-outermost-container {
@@ -226,6 +226,14 @@ nav {
 }
 .links-outermost-container ul li a {
   font-size: 18px;
+}
+
+/* BIG PHONE SCREENS=============================================== */
+@media screen and (max-width: 414px) {
+  .links-outermost-container {
+    width: 80%;
+    margin-top: 10px;
+  }
 }
 /* <!-- ============================================ -->
 <!--               HIDDEN MOBILE MENU               -->

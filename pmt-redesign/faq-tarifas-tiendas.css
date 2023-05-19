@@ -641,6 +641,7 @@ nav {
   /* border: solid blue; */
   margin-top: 65px;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, 415px);
 }
 .indi-categoria {
@@ -654,7 +655,7 @@ nav {
   align-items: center;
 }
 .indi-categoria h3 {
-  font-size: clamp(1.8rem, 0.5rem + 3vw, 4rem);
+  font-size: clamp(1.8rem, 0.5rem + 3vw, 3.5rem);
   color: white;
 }
 .indi-categoria a {
